@@ -1,41 +1,34 @@
+package Revisao;
+
 public class PontoCartesiano {
-    private double x;
-    private double y;
-
-    public PontoCartesiano(double x, double y) {
-        this.x = x;
-        this.y = y;
+    
+    private double a;
+    private double b;
+    
+    public PontoCartesiano(double a, double b) {
+        this.a = a;
+        this.b = b;
     }
-
-    public double getX() {
-        return x;
+    
+    public double getA() {
+        return a;
     }
-
-    public void setX(double x) {
-        this.x = x;
+    
+    public void setA(double a) {
+        this.a = a;
     }
-
-    public double getY() {
-        return y;
+    
+    public double getB() {
+        return b;
     }
-
-    public void setY(double y) {
-        this.y = y;
+    
+    public void setB(double b) {
+        this.b = b;
     }
-
-    public double calculcarDistania(PontoCartesiano ponto) {
-        double dx = ponto.getX() - x;
-        double dy = ponto.getY() - y;
-        return Math.sqrt(dx*dx + dy*dy);
-    }
-
-    public void mover(double dx, double dy) {
-        x += dx;
-        y += dy;
-    }
-
-    @Override
-    public String toString() {
-        return "(" + x + "," + y + ")";
+    
+    public double distanciaEuclidiana(PontoCartesiano outroPonto) {
+        double deltaA = this.a - outroPonto.getA();
+        double deltaB = this.b - outroPonto.getB();
+        return Math.sqrt(deltaA * deltaB + deltaB * deltaB);
     }
 }
