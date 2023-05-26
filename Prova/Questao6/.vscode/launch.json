@@ -5,15 +5,7 @@
       "type": "java",
       "name": "Main",
       "request": "launch",
-      "mainClass": "Questao6.Main",
-      "projectName": "Prova_636ff940"
-    },
-    {
-      "type": "java",
-      "name": "Main",
-      "request": "launch",
-      "mainClass": "Atividade1.Main",
-      "projectName": "Prova_636ff940"
+      "mainClass": "Questao6.Main"
     },
     {
       "name": "C/C++ Runner: Debug Session",
