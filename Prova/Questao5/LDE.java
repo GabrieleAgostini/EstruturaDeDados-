@@ -1,8 +1,8 @@
 package Questao5;
 
 public class LDE implements IList {
-    private Nod begin;
-    private Nod end;
+    private Node begin;
+    private Node end;
     
     public LDE (){
         this.begin = null;
@@ -10,36 +10,36 @@ public class LDE implements IList {
     }
     
     public void addBegin(int info) {
-        Nod newNod = new Nod(info);
+        Nod newNode = new Nod(info);
         
         if (begin == null){
-            begin = newNod;
-            end = newNod;
+            begin = newNode;
+            end = newNode;
         }
         else {
-            newNod.setNext(begin);
-            begin.setPrevious(newNod);
-            begin = newNod;
+            newNode.setNext(begin);
+            begin.setPrevious(newNode);
+            begin = newNode;
         }
     }
     
     public void addEnd(int info) {
-        Nod newNod = new Nod(info);
+        Nod newNode = new Nod(info);
        
         
         if (begin == null){
-            begin = newNod;
-            end = newNod;
+            begin = newNode;
+            end = newNode;
         }
         else {
            newNod.setPrevious(end);
-           end.setNext(newNod);
-           end = newNod;
+           end.setNext(newNode);
+           end = newNode;
         }
     }
     
     public void printFromBegin() {
-        Nod aux = begin;
+        Node aux = begin;
         while (aux != null) {
             System.out.println(aux.getInfo());
             aux = aux.getNext();
@@ -47,7 +47,7 @@ public class LDE implements IList {
     }
 
     public void printFromEnd() {
-        Nod aux = end;
+        Node aux = end;
         while (aux != null) {
             System.out.println(aux.getInfo());
             aux = aux.getPrevious();
@@ -56,7 +56,7 @@ public class LDE implements IList {
 
     public int nroPares() {
         int even = 0;
-        Nod aux = begin;
+        Node aux = begin;
         while (aux != null) {
             if (aux.getInfo() % 2 == 0) {
                 even++;

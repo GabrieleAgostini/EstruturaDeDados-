@@ -1,11 +1,11 @@
 package Questao5;
 
-public class Nod {
+public class Node {
     private int info;
-    private Nod next;
-    private Nod previous;
+    private Node next;
+    private Node previous;
     
-    public Nod (int info){
+    public Node (int info){
         this.info = info;
         this.next = null;
         this.previous = null;
@@ -15,23 +15,23 @@ public class Nod {
         return this.info;
     }
     
-    public Nod getNext() {
+    public Node getNext() {
         return this.next;
     }
 
-    public Nod getPrevious(){
+    public Node getPrevious(){
         return this.previous;
     }
 
-    public Nod getLast(){
-        Nod aux = this;
+    public Node getLast(){
+        Node aux = this;
         while (aux.getNext() != null) {
             aux = aux.getNext();
         }
         return aux;
     }
 
-    public Nod setNext(Nod n) { return this.next = n; }
+    public Node setNext(Node n) { return this.next = n; }
 
-    public Nod setPrevious(Nod n) { return this.previous = n; }
+    public Node setPrevious(Node n) { return this.previous = n; }
 }
