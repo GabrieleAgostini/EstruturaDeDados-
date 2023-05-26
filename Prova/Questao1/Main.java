@@ -1,9 +1,9 @@
-package Atividade1;
+package Questao1;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 
-public class IntersecaoVe {
+public class Main {
     public static void main(String[] args) {
         int[] vetor1 = {1, 2, 3, 4, 5};
         int[] vetor2 = {4, 5, 6, 7, 8};
@@ -17,7 +17,7 @@ public class IntersecaoVe {
     }
 
     public static int[] encontrarIntersecao(int[] vetor1, int[] vetor2) {
-        HashSet<Integer> conjuntoVetor1 = new HashSet<>(); // Conjunto para armazenar os elementos do vetor1
+        HashSet<Integer> conjuntoVetor1 = new HashSet<>();
         for (int elemento : vetor1) {
             conjuntoVetor1.add(elemento);
         }
@@ -37,4 +37,3 @@ public class IntersecaoVe {
         return resultado;
     }
 }
-

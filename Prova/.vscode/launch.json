@@ -15,8 +15,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Pichau/OneDrive/Área de Trabalho/Estrutura de Dados/Implemente o TAD PontoCartesiano em Java/EstruturaDeDados-/Prova",
-      "program": "c:/Users/Pichau/OneDrive/Área de Trabalho/Estrutura de Dados/Implemente o TAD PontoCartesiano em Java/EstruturaDeDados-/Prova/build/Debug/outDebug",
+      "cwd": "c:/Users/Pichau/OneDrive/Área de Trabalho/Estrutura de Dados/Implemente o TAD PontoCartesiano em Java/EstruturaDeDados-/Prova/Questao3",
+      "program": "c:/Users/Pichau/OneDrive/Área de Trabalho/Estrutura de Dados/Implemente o TAD PontoCartesiano em Java/EstruturaDeDados-/Prova/Questao3/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
