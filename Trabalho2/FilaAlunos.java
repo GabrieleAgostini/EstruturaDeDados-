@@ -1,6 +1,7 @@
 public class FilaAlunos {
     private NoAluno inicio;
     private NoAluno fim;
+    private int tamanho;
 
     public void enqueue(Aluno aluno) {
         NoAluno novoNo = new NoAluno(aluno);
@@ -11,6 +12,7 @@ public class FilaAlunos {
             fim.setProximo(novoNo);
             fim = novoNo;
         }
+        tamanho++;
     }
 
     public Aluno dequeue() {
@@ -22,6 +24,7 @@ public class FilaAlunos {
         if (inicio == null) {
             fim = null;
         }
+        tamanho--;
         return aluno;
     }
 
@@ -36,5 +39,8 @@ public class FilaAlunos {
             temp = temp.getProximo();
         }
     }
-}
 
+    public int size() {
+        return tamanho;
+    }
+}

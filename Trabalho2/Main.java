@@ -1,8 +1,9 @@
+
 import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) {
-        String palavra = "arara";
+        String palavra = "ana";
         if (ePalindromo(palavra)) {
             System.out.println(palavra + " é um palíndromo.");
         } else {
@@ -13,6 +14,7 @@ public class Main {
         pilhaAlunos.push(new Aluno("Gabriele"));
         pilhaAlunos.push(new Aluno("Maria"));
         pilhaAlunos.push(new Aluno("Pietra"));
+        pilhaAlunos.push(new Aluno("Nathalia"));
 
         System.out.println("Tamanho da pilha: " + pilhaAlunos.size());
         System.out.println("Pilha está vazia? " + pilhaAlunos.isEmpty());
@@ -22,6 +24,7 @@ public class Main {
         filaAlunos.enqueue(new Aluno("Guilherme"));
         filaAlunos.enqueue(new Aluno("Ana"));
         filaAlunos.enqueue(new Aluno("Patricia"));
+        filaAlunos.enqueue(new Aluno("Angela"));
 
         System.out.println("Fila antes da inversão: ");
         filaAlunos.imprimir();
@@ -30,6 +33,9 @@ public class Main {
 
         System.out.println("Fila depois da inversão: ");
         filaAlunos.imprimir();
+        
+        System.out.println("Tamanho da fila: " + filaAlunos.size());
+
     }
 
     public static boolean ePalindromo(String palavra) {
